@@ -1,0 +1,152 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /* font-family: 'Fraunces', serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    background-color: hsla(32, 37%, 92%, 0.808);
+}
+
+.main{
+    display: flex;
+    width: 30rem;
+}
+
+.parent1{
+    width: 50%;
+}
+
+.parent1 img{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.parent2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+    gap: 1.3rem;
+    border-radius: 0 5px 5px 0;
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.perfume{
+    margin: 0;
+    letter-spacing: 4.5px;
+    width: 100%;
+    font-size: 0.5rem;
+    color:hsl(228, 12%, 48%);
+}
+
+.parent2 h1{
+    width: 85%;
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 1.5rem;
+    color: hsl(212, 21%, 14%);
+}
+.para{
+    margin: 0;
+    line-height: 1.5;
+    color:hsl(228, 12%, 48%);
+}
+
+.dollar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dollar p{
+    margin: 0;
+}
+
+.dollar1{
+    color:  hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.dollar2{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 40%);
+    gap: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: -1rem;
+}
+
+.button img{
+    width: 0.8rem;
+}
+
+.button p{
+    color: hsl(0, 0%, 100%);
+}
+
+#mobile{
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+   
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .parent1{
+        width:100%;
+    }
+
+    #mobile{
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #desktop{
+        display: none;
+    }
+
+
+    .parent2{
+        width: 100%;
+        font-size: 13px;
+        gap: 0.8rem;
+        padding-bottom: 2.5rem;
+        border-radius: 0 0 10px 10px;
+
+    }
+
+    .parent2 h1{
+        width: 100%;
+        line-height: 1.7rem;
+    }
+
+    .para{
+        width: 98%;
+        font-size: 13px;
+    }
+    
+}
